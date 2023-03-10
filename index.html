@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18th Lounge Menu </title>
+</head>
+
+<body>
+    <embed src="./menu1.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="1000px">
+    <div id="overlay" style="margin: auto;">
+        <!-- <img src="loading.gif" alt="Loading..."> -->
+        <iframe src="https://giphy.com/embed/xTk9ZvMnbIiIew7IpW" width="100%" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </div>
+</body>
+
+<script>
+    // Show overlay when PDF is loading
+    document.addEventListener("DOMContentLoaded", function(event) {
+        var pdfEmbed = document.querySelector("embed");
+        pdfEmbed.addEventListener("loadstart", function() {
+            var overlay = document.getElementById("overlay");
+            overlay.style.display = "block";
+        });
+    });
+
+    // Hide overlay when PDF is finished loading
+    window.addEventListener("load", function() {
+        var overlay = document.getElementById("overlay");
+        overlay.style.display = "none";
+    });
+</script>
+
+</html>
