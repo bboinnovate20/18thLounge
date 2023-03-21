@@ -6,34 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>18th Lounge Menus</title>
+    <style>
+        #overlayer {
+            display: block;
+            /* place-content: center; */
+        }
+        
+        img {
+            display: block;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        body {
+            background-color: orange;
+        }
+        
+        @media (max-width: 800px) {
+            img {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <iframe style="border: none" src="https://docs.google.com/viewer?url=https://firebasestorage.googleapis.com/v0/b/quizapp-49c5d.appspot.com/o/menu1.pdf?alt=media&token=fd843fb6-23fc-4a45-b919-52601f2d6a42&embedded=true" type="application/pdf" width="100%"
-        height="1000px" />
+
     <div id="overlay" style="margin: auto;">
         <!-- <img src="loading.gif" alt="Loading..."> -->
-        <iframe src="https://giphy.com/embed/xTk9ZvMnbIiIew7IpW" width="100%" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <!-- <iframe src="https://giphy.com/embed/xTk9ZvMnbIiIew7IpW" width="100%" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> -->
+        <img src="./asset" alt="" srcset="">
+        <img src="./asset/2.jpg" alt="" srcset="">
+        <img src="./asset/3.jpg" alt="" srcset="">
+        <img src="./asset/4.jpg" alt="" srcset="">
+        <img src="./asset/5.jpg" alt="" srcset="">
+        <img src="./asset/6.jpg" alt="" srcset="">
+        <img src="./asset/7.jpg" alt="" srcset="">
+        <img src="./asset/8.jpg" alt="" srcset="">
+        <img src="./asset/9.jpg" alt="" srcset="">
+        <img src="./asset/10.jpg" alt="" srcset="">
+        <img src="./asset/11.jpg" alt="" srcset="">
+        <img src="./asset/12.jpg" alt="" srcset="">
     </div>
 </body>
 
-<script>
-    // Show overlay when PDF is loading
-    document.addEventListener("DOMContentLoaded", function(event) {
-        var pdfEmbed = document.querySelector("embed");
-        pdfEmbed.addEventListener("loadstart", function() {
-            var overlay = document.getElementById("overlay");
-            overlay.style.display = "block";
-        });
-    });
 
-
-
-    // Hide overlay when PDF is finished loading
-    window.addEventListener("load", function() {
-        var overlay = document.getElementById("overlay");
-        overlay.style.display = "none";
-    });
-</script>
 
 </html>
